@@ -1,6 +1,8 @@
 import "./Footer.css";
 
 const Footer = () => {
+
+  // comment 
   return (
     <div className="container footer-wrapp">
       <footer>
