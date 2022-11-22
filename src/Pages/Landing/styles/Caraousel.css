@@ -1,0 +1,7 @@
+.caraousel {
+  overflow: hidden;
+  padding-top: 70px;
+}
+.caraousel > div {
+  width: 100%;
+}

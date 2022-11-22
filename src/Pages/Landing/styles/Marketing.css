@@ -1,0 +1,174 @@
+.marketing {
+  position: relative;
+  isolation: isolate;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 27, 67, 1) 41%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 100px 24px;
+  overflow: hidden;
+}
+
+.overlay-market {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 115%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.35),
+    hsla(0, 0%, 100%, 0) 77%
+  );
+  opacity: 0.8;
+}
+.marketing-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  gap: 60px;
+}
+.market-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.market-box {
+  height: 200px;
+  width: 100%;
+  border: 1px none #000;
+  border-radius: 6px;
+  background-color: hsla(0, 0%, 100%, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transform: translateX(-100px);
+  gap: 20px;
+}
+.market-box h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.market-box p {
+  font-size: 16px;
+}
+.market-box img {
+  width: 32px;
+  object-fit: contain;
+}
+.right-market {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  transform: translateX(100px);
+}
+.right-market h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+}
+.right-market p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+.market-circle {
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background-color: hsla(0, 0%, 100%, 0.13);
+  opacity: 0.2;
+}
+.market-circle1 {
+  top: 24%;
+  right: 36%;
+  width: 10vh;
+  height: 10vh;
+}
+.market-circle2 {
+  top: 20%;
+  right: 31%;
+  width: 3vh;
+  height: 3vh;
+}
+.solar-div {
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+  width: 400px;
+  height: 400px;
+  right: -120px;
+  opacity: 0.2;
+}
+.solar-circle1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: hsla(0, 0%, 100%, 0.13);
+  box-shadow: 4px 4px 12px 0 rgb(0 0 0 / 20%);
+  border: 2px solid white;
+}
+.solar-dot {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  margin-top: 80px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+@media screen and (max-width: 1089px) {
+  .marketing-div {
+    flex-direction: column;
+  }
+  .solar-div {
+    top: 5%;
+    bottom: initial;
+    width: 250px;
+    height: 250px;
+  }
+  .solar-dot {
+    margin-top: 30px;
+  }
+  .market-circle1 {
+    right: initial;
+    left: 15%;
+  }
+  .market-circle2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+  .solar-div {
+    top: 10%;
+    width: 200px;
+    height: 200px;
+  }
+  .solar-dot {
+    margin-top: 9px;
+  }
+  .market-circle1 {
+    top: 8%;
+    left: 8%;
+  }
+}

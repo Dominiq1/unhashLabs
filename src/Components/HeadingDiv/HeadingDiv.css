@@ -1,0 +1,28 @@
+.heading-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+.heading-div img {
+  width: 24px;
+  object-fit: contain;
+  opacity: 0.7;
+}
+.heading-div h3 {
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.heading-div h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 5px;
+  line-height: 1;
+}

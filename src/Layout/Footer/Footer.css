@@ -1,0 +1,38 @@
+.footer-wrapp {
+  background-color: black;
+}
+footer {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+}
+footer p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  background-color: #8e98ad;
+  width: 214px;
+  border-radius: 4px;
+  height: 40px;
+}
+footer p img {
+  width: 60px;
+  object-fit: contain;
+}
+footer h6 {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+@media screen and (max-width: 615px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

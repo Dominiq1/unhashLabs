@@ -1,0 +1,44 @@
+.book-wrapper {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 27, 67, 1) 41%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.tag{
+  text-decoration: none;
+}
+.book {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+.book h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.reverse-btn {
+  background-image: linear-gradient(180deg, #214af0, #39abff) !important;
+  color: white !important;
+  line-height: 1 !important;
+  border-style: none !important;
+  text-decoration: none;
+}
+.reverse-btn:hover {
+  text-decoration: none;
+  background-image: linear-gradient(180deg, #214af0, #39abff) !important;
+}
+@media screen and (max-width: 690px) {
+  .book {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

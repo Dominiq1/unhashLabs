@@ -1,0 +1,120 @@
+.portfolio {
+  position: relative;
+  padding: 80px 24px;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 287px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 27, 67, 1) 41%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.port-overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 115%;
+  background-image: linear-gradient(180deg, #343e52, #fff 77%);
+  opacity: 0.15;
+}
+.left-port {
+  position: absolute;
+  left: -13%;
+  top: 0px;
+  right: 100%;
+  bottom: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  width: 100vh;
+  height: 100vh;
+  margin: auto;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  background-color: transparent;
+  opacity: 1;
+}
+.port-circle {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 1;
+  position: absolute;
+}
+.port-circle1 {
+  width: 8vh;
+  height: 8vh;
+  top: 10%;
+  right: 20%;
+}
+.port-circle2 {
+  width: 3vh;
+  height: 3vh;
+  right: 12%;
+  top: 29%;
+}
+.port-circle3 {
+  width: 40vh;
+  height: 40vh;
+  top: 0%;
+  right: -13%;
+}
+.portfolio-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 940px;
+}
+.port-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.port-col h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.port-col p {
+  font-size: 16px;
+}
+@media screen and (max-width: 1041px) {
+  .left-port {
+    left: -50%;
+  }
+  .port-circle3 {
+    right: -30%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .left-port,
+  .port-circle3 {
+    display: none;
+  }
+  .portfolio {
+    min-height: initial;
+  }
+}
+@media screen and (max-width: 620px) {
+  .portfolio {
+    padding: 80px 24px;
+  }
+  .portfolio-div {
+    gap: 40px;
+    flex-direction: column;
+  }
+}

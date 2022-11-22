@@ -1,0 +1,30 @@
+.project-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 120px 24px;
+}
+.project-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 1113px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 610px) {
+  .project-div {
+    padding: 50px 24px;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
