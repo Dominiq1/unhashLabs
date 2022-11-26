@@ -8,3 +8,17 @@
 2 - 
 
 
+
+#deploy vi git
+
+
+1 - commit 
+2 - write comment 
+3- publish to github 
+
+
+
+
+
+
+

@@ -46,8 +46,8 @@ const Services = () => {
    
     },
     {
-      text: "SMS & Email Marketing",
-      img: "/service-ico2.png",
+      text: "Graphics and design",
+      img: "/design.png",
       lineColor: "#ff9500",
     },
     {

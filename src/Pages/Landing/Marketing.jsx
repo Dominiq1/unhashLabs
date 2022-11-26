@@ -68,13 +68,12 @@ const Marketing = () => {
           </div>
         </div>
         <div ref={rightMarket} className="right-market">
-          <h2>A true full stack marketing agency</h2>
+          <h2>A true full-stack agency</h2>
           <p>
             We offer a wide variety of services including but not limited to :{" "}
             <br /> - Website Design and Development. <br /> - Marketing across
             many platforms such as Facebook, Instagram, Snapchat, Tiktok,
-            Google, and Bing. <br /> - Backend re-marketing via Email and SMS.{" "}
-            <br /> - Consulting calls tailored to help fuel your companies
+            Google, and Bing. <br /> - Consulting calls tailored to help fuel your companies
             growth. <br /> - Media creation ranging from custom 3d renders,
             videos, pictures, advertisements, product pictures, and more.
           </p>
